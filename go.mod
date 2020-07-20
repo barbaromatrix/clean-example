@@ -1,4 +1,4 @@
-module github.com/barbaromatrix/clean-go-example
+module github.com/barbaromatrix/clean-example
 
 go 1.14
 
