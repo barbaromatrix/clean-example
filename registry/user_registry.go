@@ -1,8 +1,8 @@
 package registry
 
 import (
-    "github.com/barbaromatrix/clean-example/interface/controller"
-    ip "github.com/barbaromatrix/clean-example/interface/presenter"
+    "github.com/barbaromatrix/clean-example/interface/controllers"
+    ip "github.com/barbaromatrix/clean-example/interface/presenters"
     ir "github.com/barbaromatrix/clean-example/interface/repository"
     "github.com/barbaromatrix/clean-example/usecase/interactor"
     up "github.com/barbaromatrix/clean-example/usecase/presenter"

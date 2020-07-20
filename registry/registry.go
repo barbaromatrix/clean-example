@@ -2,7 +2,7 @@ package registry
 
 import (
     "github.com/jinzhu/gorm"
-    "github.com/barbaromatrix/clean-example/interface/controller"
+    "github.com/barbaromatrix/clean-example/interface/controllers"
 )
 
 type registry struct {
