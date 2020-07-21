@@ -1,15 +1,15 @@
 package datastore
 
 import (
-    "log"
+	"log"
 
-    "github.com/go-sql-driver/mysql"
-    "github.com/jinzhu/gorm"
-    "github.com/barbaromatrix/clean-example/config"
+	"github.com/barbaromatrix/clean-example/config"
+	"github.com/go-sql-driver/mysql"
+	"github.com/jinzhu/gorm"
 )
 
 func NewDB() *gorm.DB {
-    DBMS := "mysql"
+	DBMS := "mysql"
 	mySqlConfig := &mysql.Config{
 		User:                 config.C.Database.User,
 		Passwd:               config.C.Database.Password,

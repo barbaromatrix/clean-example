@@ -1,19 +1,20 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 	"log"
+
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/labstack/echo"
 
-    "github.com/barbaromatrix/clean-example/config"
-    "github.com/barbaromatrix/clean-example/infrastructure/datastore"
-    "github.com/barbaromatrix/clean-example/infrastructure/router"
-    "github.com/barbaromatrix/clean-example/registry"
+	"github.com/barbaromatrix/clean-example/config"
+	"github.com/barbaromatrix/clean-example/infrastructure/datastore"
+	"github.com/barbaromatrix/clean-example/infrastructure/router"
+	"github.com/barbaromatrix/clean-example/registry"
 )
 
 func main() {
-    config.ReadConfig()
+	config.ReadConfig()
 
 	db := datastore.NewDB()
 	db.LogMode(true)
